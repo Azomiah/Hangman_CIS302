@@ -1,14 +1,7 @@
 body {
-  font-family: 'Roboto', sans-serif;
-  /* other styles */
-}
-
-h1, h5, #word, #guesses {
-  font-family: 'Roboto', sans-serif;
-}
-body {
-  background-color: #121212; /* Dark background for contrast */
+  background-color: #121212; /* Dark background */
   color: #E0E0E0; /* Light text color */
+  font-family: Arial, sans-serif;
 }
 
 main {
@@ -18,7 +11,8 @@ main {
 
 h1, h5 {
   text-align: center;
-  color: #FFFFFF; /* White text for headers */
+  color: #FFFFFF; /* White for headers */
+  font-family: 'Dancing Script', cursive; /* Apply cursive font */
 }
 
 footer {
@@ -29,34 +23,48 @@ footer {
   font-family: Arial, sans-serif;
 }
 
-/* Word display */
 #word {
   letter-spacing: 10px;
   text-align: center;
   font-size: 24pt;
   color: #FFFFFF;
   font-weight: bold;
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Dancing Script', cursive;
 }
 
-/* Guess display */
+/* Keyboard-style guess letters */
 #guesses {
   text-align: center;
   font-size: 18pt;
-  color: #CCCCCC;
   font-weight: bold;
-  font-family: "Courier New", Courier, monospace;
+  color: #FFD700; /* Gold color for visibility */
 }
 
-/* Guess letter styling */
 .guess {
-  padding: 12px;
+  padding: 12px 15px;
   display: inline-block;
-  border: 2px solid #CCCCCC;
-  border-radius: 12px;
-  margin: 8px;
+  border: 2px solid #FFD700;
+  border-radius: 8px;
+  margin: 5px;
   cursor: pointer;
-  color: #E0E0E0;
+  font-family: 'Dancing Script', cursive; /* Cursive font for keyboard letters */
+  font-size: 18pt;
+  color: #FFD700; /* Gold color */
+  background-color: #333333; /* Dark button background */
+  box-shadow: 0 4px #111111; /* Shadow for 3D effect */
+  text-align: center;
+}
+
+/* Hover effect for keyboard letters */
+.guess:hover {
+  background-color: #444444;
+}
+
+/* Active effect for keyboard letters (pressed effect) */
+.guess:active {
+  background-color: #555555;
+  box-shadow: 0 2px #111111;
+  transform: translateY(2px);
 }
 
 /* Button styles */
@@ -66,8 +74,6 @@ footer {
   font-size: 24px;
   cursor: pointer;
   text-align: center;
-  text-decoration: none;
-  outline: none;
   color: #000000;
   background-color: #E0E0E0;
   border: none;
