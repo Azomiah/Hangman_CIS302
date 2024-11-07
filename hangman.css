@@ -1,0 +1,78 @@
+body {
+  background-color: #121212; /* Dark background for contrast */
+  color: #E0E0E0; /* Light text color */
+}
+
+main {
+  max-width: 610px;
+  margin: auto;
+}
+
+h1, h5 {
+  text-align: center;
+  color: #FFFFFF; /* White text for headers */
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #CCCCCC;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+/* Word display */
+#word {
+  letter-spacing: 10px;
+  text-align: center;
+  font-size: 24pt;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* Guess display */
+#guesses {
+  text-align: center;
+  font-size: 18pt;
+  color: #CCCCCC;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* Guess letter styling */
+.guess {
+  padding: 12px;
+  display: inline-block;
+  border: 2px solid #CCCCCC;
+  border-radius: 12px;
+  margin: 8px;
+  cursor: pointer;
+  color: #E0E0E0;
+}
+
+/* Button styles */
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #000000;
+  background-color: #E0E0E0;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #333333;
+}
+
+.button:hover {
+  background-color: #B0B0B0;
+}
+
+.button:active {
+  background-color: #B0B0B0;
+  box-shadow: 0 5px #666666;
+  transform: translateY(4px);
+}
