@@ -1,4 +1,12 @@
 body {
+  font-family: 'Roboto', sans-serif;
+  /* other styles */
+}
+
+h1, h5, #word, #guesses {
+  font-family: 'Roboto', sans-serif;
+}
+body {
   background-color: #121212; /* Dark background for contrast */
   color: #E0E0E0; /* Light text color */
 }
